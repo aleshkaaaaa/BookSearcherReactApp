@@ -16,7 +16,7 @@ const SearchForm = () => {
   const searchBook=(evt)=>{
     if(evt.key==="Enter")
     {
-      axios.get('https://www.googleapis.com/books/v1/volumes?q='+ search +'&key=AIzaSyAUrWbMHIWA-7gKEhRCU1FzkyAawM7TBJA'+'&maxResults=30')
+      axios.get('https://www.googleapis.com/books/v1/volumes?q='+ search +'&key=SECRET_KEY'+'&maxResults=30')
       .then(response => {
         setData(response.data)
         dispatch(SearchValue(search))

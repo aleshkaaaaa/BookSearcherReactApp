@@ -17,7 +17,7 @@ const BookList = () => {
   const paginate = pageNumer => setCurrentPage(pageNumer)
 
   const SearchBookForPage = () => {
-    axios.get('https://www.googleapis.com/books/v1/volumes?q='+ searchValue +'&key=SECRET_KEY'+'&maxResults=30'+'&startIndex=' + currentPage * 30)
+    axios.get('https://www.googleapis.com/books/v1/volumes?q='+ searchValue +' &key=SECRET_KEY '+'&maxResults=30'+'&startIndex=' + currentPage * 30)
     .then(response => {
       dispatch(ArrayOfItemsFound(response.data))
     })

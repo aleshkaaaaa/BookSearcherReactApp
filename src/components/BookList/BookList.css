@@ -1,0 +1,13 @@
+.BookList {
+    width: 100%;
+    margin: 0rem 0;
+}
+
+.BookList-amountOfResults {
+    font-size: 2rem;
+    padding: 0.6rem;
+}
+
+.BookList-books{
+    grid-template-columns: repeat(4, 1fr);
+}
